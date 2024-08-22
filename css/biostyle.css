@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1ecb5e;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+#biopotenciais-screen, #emergencia-screen, #dicas-screen, #perfil-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.hidden {
+    display: none;
+    text-align: center;
+}
+
+#logo-bio {
+    width: 110px;
+    height: 110px;
+}
+
+#logo-emerg{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #1ecb5e; /* Cor verde para "VitalityVest" */
+}
+
+.logo-login {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+h3 {
+    margin-bottom: 50px;
+    color: #000000;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1ecb5e;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.password-container {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-login {
+    padding: 10px;
+    background-color: #1ecb5e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.forgot-password {
+    color: #1ecb5e;
+    margin-top: 15px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    width: 45px;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    max-width: 320px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.emergency-button {
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.personagem-dica {
+    margin-top: 20px;
+    width: 200px;
+    position: absolute;
+    align-self: end;
+    margin-left: 50%;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+.navbar a {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.biopotenciais-icon-select{
+    width: 24px;
+    height: 24px;
+}
+
+.emergencia-icon-select{
+    width: 24px;
+    height: 24px;
+}
+
+#textnav {
+    font-size: 10px;
+    border: 24px;
+}
+
+#nav1 {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    width: 83.287px;
+    height: 60.400px;
+    margin-left: 10px;
+
+}
+
+#nav2 {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    width: 83.287px;
+    height: 60.400px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#nav3 {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    width: 83.287px;
+    height: 60.400px;
+    margin-right: 20px;
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 300px;
+    text-align: left;
+}
+
+.btn-alterar {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1ecb5e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120%;
+    max-width: 340px;
+    margin: 10px;
+    text-align: center;
+}
+
+#temperatura, #fadiga{
+   width: 150px;
+   height: 100px;
+   margin-right: 20px;
+   text-align: center;
+}
+
+#giroscopio, #ataque_panico{
+    width: 150px;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+#coracao-img{
+    width: 100px;
+    height: 100px;
+    margin-right: 15px
+}
+
+#giroscopio-img, #fadiga-img, #panico-img{
+    margin: auto;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+}
+
+p{
+    margin: auto;
+}
+
+#emergency-icon{
+    width: 300px;
+}
+
+#dicas{
+    display: flex;
+    margin: auto;
+}
+
+.dica-content {
+    display: none;
+}
+
+.dica-content.active {
+    display: block;
+}
+
+#seta{
+    transform: rotate(-45deg);
+    position: absolute;
+    margin-left: 15%;
+}

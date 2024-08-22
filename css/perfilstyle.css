@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.splash-screen, .login-screen, #biopotenciais-screen, #emergencia-screen, #dicas-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#perfil-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #1ecb5e; /* Cor verde para "VitalityVest" */
+}
+
+.logo-login {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #1ecb5e;
+}
+
+form {
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1ecb5e;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.password-container {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-login {
+    padding: 10px;
+    background-color: #1ecb5e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.forgot-password {
+    color: #1ecb5e;
+    margin-top: 15px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+}
+
+.emergency-button {
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.personagem-dica {
+    margin-top: 20px;
+    width: 150px;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.navbar a {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.biopotenciais-icon-select{
+    width: 24px;
+    height: 24px;
+}
+
+.profile-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.profile-details {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 300px;
+    text-align: left;
+}
+
+.btn-alterar {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1ecb5e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
