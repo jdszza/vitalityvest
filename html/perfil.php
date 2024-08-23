@@ -67,7 +67,7 @@ $avatar = !empty($_SESSION['user_avatar']) ? $_SESSION['user_avatar'] : '../img/
             <p>Endereço: <?php echo htmlspecialchars($user['endereco']); ?></p>
             <p>Emergência: <?php echo htmlspecialchars($user['contato_emergencia']); ?></p>
         </div>
-        <button class="btn-alterar" onclick="window.location.href='alterar_perfil.php'">Alterar</button>
+        <button class="btn-alterar" onclick="window.location.href='alterar-perfil.php'">Alterar</button>
     </div>
 
     <script src="../js/script.js"></script>

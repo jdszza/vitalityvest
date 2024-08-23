@@ -1,0 +1,110 @@
+/* Estilo Geral */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+/* Tela de Alteração de Perfil */
+#alterar-perfil-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+}
+
+/* Botão do Menu */
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+    margin: 7px;
+}
+
+/* Título */
+h2 {
+    margin-bottom: 10px;
+    color: #1ecb5e;
+}
+
+/* Formulário */
+form {
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Campos de Entrada */
+input[type="email"],
+input[type="number"],
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1ecb5e;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+/* Botão de Mostrar Senha */
+.password-container {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Botão de Submissão */
+.btn-alterar {
+    padding: 10px;
+    background-color: #1ecb5e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Mensagens de Erro e Sucesso */
+.erro {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sucesso {
+    color: green;
+    margin-bottom: 15px;
+    text-align: center;
+}
