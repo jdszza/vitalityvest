@@ -6,7 +6,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-require_once "../php/biopotenciais.php";
+require_once "../php/backbiopotenciais.php";
 ?>
 
 <!DOCTYPE html>
