@@ -1,14 +1,3 @@
-<?php
-session_start(); // Inicia a sessão
-if (!isset($_SESSION['user_id'])) {
-    // Se o usuário não estiver logado, redireciona para a página de login
-    header('Location: ../index.php');
-    exit();
-}
-
-require_once "../php/backemergencia.php";
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -17,6 +6,59 @@ require_once "../php/backemergencia.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/biostyle.css">
     <title>VitalityVest</title>
+    <style>
+        /* Estilos para o card de notificação */
+        .notification-card {
+            display: none;
+            /* Inicialmente oculto */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            padding: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            border-radius: 5px;
+        }
+
+        .notification-card.success {
+            background-color: #d4edda;
+            color: #155724;
+            border-color: #c3e6cb;
+        }
+
+        .notification-card p {
+            margin: 0;
+        }
+
+        .notification-card button {
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+            color: inherit;
+        }
+
+        /* Estilos para o card de confirmação */
+        .confirmation-card {
+            display: none;
+            /* Inicialmente oculto */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,6 +77,19 @@ require_once "../php/backemergencia.php";
         <button class="emergency-button">
             <img src="../img/emergency-icon.png" alt="Emergency Button" id="emergency-icon">
         </button>
+    </div>
+
+    <!-- Card de Confirmação -->
+    <div id="confirmation-card" class="confirmation-card">
+        <p>Você tem certeza que deseja ativar a emergência?</p>
+        <button id="confirm-emergency">Sim</button>
+        <button id="cancel-emergency">Cancelar</button>
+    </div>
+
+    <!-- Card de Notificação -->
+    <div id="notification-card" class="notification-card">
+        <p id="notification-message"></p>
+        <button id="close-notification">X</button>
     </div>
 
     <!-- Navigation Bar -->
@@ -58,7 +113,7 @@ require_once "../php/backemergencia.php";
             </div>
         </a>
     </nav>
-    <script src="js/script.js"></script>
+    <script src="../js/emergency-script.js"></script>
 </body>
 
 </html>
