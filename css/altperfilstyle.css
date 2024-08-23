@@ -38,7 +38,7 @@ body {
 
 /* Título */
 h2 {
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     color: #1ecb5e;
 }
 
@@ -107,4 +107,24 @@ input[type="password"] {
     color: green;
     margin-bottom: 15px;
     text-align: center;
+}
+
+/* Estilos para o botão de envio */
+#enviar {
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    display: inline-block; /* Alinha o botão em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margens */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+    background-color: #1ecb5e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background-color: #45a049; /* Tom de verde mais escuro quando o botão é hover */
 }

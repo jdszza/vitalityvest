@@ -65,7 +65,7 @@ require_once "../php/backaltperfil.php"; // Inclui o código de processamento do
             <label>Contato de Emergência:</label>
             <input type="text" name="contato_emergencia" value="<?php echo htmlspecialchars($user['contato_emergencia']); ?>" required>
 
-            <button type="submit">Salvar Alterações</button>
+            <button type="submit" id="enviar">Salvar Alterações</button>
         </form>
     </div>
 
