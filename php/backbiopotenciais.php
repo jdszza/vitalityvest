@@ -5,10 +5,7 @@ require_once 'conn.php';
 $user_id = $_SESSION['user_id'];
 
 // Consulta SQL para obter dados do fone de ouvido e da cinta
-$query = "SELECT f.batimentos_cardiacos, c.temperatura_corporal
-          FROM fone_ouvido f
-          JOIN cintas c ON f.id_usuario = c.id_usuario
-          WHERE f.id_usuario = ?";
+$query = "SELECT batimentos_cardiacos, temperatura_corporal FROM sensores WHERE id_usuario = ?";
 
 // Preparação da consulta
 $stmt = $sql->prepare($query);
