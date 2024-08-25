@@ -40,7 +40,7 @@ require_once "../php/backbiopotenciais.php";
                 <img src="../img/temp-icon.png" alt="Temperature Icon" id="temperatura-img" />
             </div>
             <div class="card" id="giroscopio">
-                <img src="../img/giro-parado.png" alt="Stop Icon" id="giroscopio-img" />
+                <img src="<?php echo $image_src; ?>" alt="Giro Icon" id="giroscopio-img" />
             </div>
         </section>
         <section>
@@ -74,6 +74,5 @@ require_once "../php/backbiopotenciais.php";
             </div>
         </a>
     </nav>
-    <script src="../js/script.js"></script>
 </body>
 </html>
