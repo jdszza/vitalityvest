@@ -311,3 +311,13 @@ p{
     position: absolute;
     margin-left: 15%;
 }
+
+#bpm{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#temperatura{
+    font-size: 25px;
+    font-weight: bold;
+}

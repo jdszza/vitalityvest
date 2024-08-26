@@ -31,12 +31,12 @@ require_once "../php/backbiopotenciais.php";
         </div>
         <h2>Olá, <?php echo htmlspecialchars($_SESSION['user_name']); ?>, tudo bem?</h2>
         <div class="card" id="batimento">
-            <p><?php echo $batimentos; ?> BPM</p>
+            <p id="bpm"><?php echo $batimentos; ?> BPM</p>
             <img src="../img/heart-icon.png" alt="Heart Icon" id="coracao-img" />
         </div>
         <section>
             <div class="card" id="temperatura">
-                <p><?php echo $temperatura; ?> °C</p>
+                <p><?php echo $temperatura; ?>°C</p>
                 <img src="../img/temp-icon.png" alt="Temperature Icon" id="temperatura-img" />
             </div>
             <div class="card" id="giroscopio">
@@ -45,10 +45,10 @@ require_once "../php/backbiopotenciais.php";
         </section>
         <section>
             <div class="card" id="fadiga">
-                <img src="../img/fadiga.png" alt="Fadiga Icon" id="fadiga-img" />
+                <img src="<?php echo $fadiga_img; ?>" alt="Fadiga Icon" id="fadiga-img" />
             </div>
             <div class="card" id="ataque_panico">
-                <img src="../img/ataque-panico.png" alt="Panic Icon" id="panico-img" />
+                <img src="<?php echo $panico_img; ?>" alt="Panic Icon" id="panico-img" />
             </div>
         </section>
     </div>
