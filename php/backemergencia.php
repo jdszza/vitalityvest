@@ -25,7 +25,7 @@ try {
 
         if ($id_localizacao) {
             // Inserir os dados na tabela emergencia
-            $query = "INSERT INTO emergencia (id_usuario, id_localizacao, estado, hora) VALUES (?, ?, 1, NOW())";
+            $query = "INSERT INTO emergencia (id_usuario, id_localizacao, estado, voz_mic, hora) VALUES (?, ?, 1, 1, NOW())";
             $stmt = $sql->prepare($query);
 
             if ($stmt) {
