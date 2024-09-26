@@ -176,6 +176,7 @@ input[type="email"], input[type="password"] {
     border: none;
     font-size: 24px;
     cursor: pointer;
+    text-decoration: none
 }
 
 .biopotenciais-icon-select{
