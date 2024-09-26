@@ -61,21 +61,6 @@ input[type="email"], input[type="password"] {
     color: white;
 }
 
-.password-container {
-    position: relative;
-}
-
-.show-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
 .btn-login {
     padding: 10px;
     background-color: #1ecb5e;
