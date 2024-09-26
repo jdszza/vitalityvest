@@ -11,12 +11,14 @@ require_once "../php/backbiopotenciais.php";
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../css/biostyle.css" />
     <title>VitalityVest</title>
 </head>
+
 <body>
     <header>
         <a href="perfil.php">
@@ -74,5 +76,13 @@ require_once "../php/backbiopotenciais.php";
             </div>
         </a>
     </nav>
+    <script>
+        // Atualizar a página a cada 5 segundos (5000 milissegundos)
+        setInterval(function() {
+            window.location.reload();
+        }, 5000);
+    </script>
+
 </body>
+
 </html>
