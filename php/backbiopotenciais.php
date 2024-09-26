@@ -60,7 +60,7 @@ $sql->close();
 
 // Define a imagem com base na situação do giroscópio
 $image_src = "";
-if ($situacao_mpu == "Movimento") {
+if ($situacao_mpu == "Andando") {
     $image_src = "../img/giro-andando.png";  
 } elseif ($situacao_mpu == "Parado") {
     $image_src = "../img/giro-parado.png";  
