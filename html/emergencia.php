@@ -13,14 +13,36 @@
             /* Inicialmente oculto */
             position: fixed;
             bottom: 20px;
-            right: 20px;
-            background-color: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            /* Ajuste de largura */
+            background-color: #d4edda;
+            /* Cor de fundo verde claro */
+            color: #155724;
+            /* Texto verde escuro */
+            border: 1px solid #c3e6cb;
             padding: 15px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            /* Sombra suave */
             z-index: 1000;
-            border-radius: 5px;
+            border-radius: 10px;
+            /* Bordas arredondadas */
+            font-size: 16px;
+            text-align: center;
+            animation: fadeIn 0.5s ease, fadeOut 0.5s 3s ease;
+            /* Animação de entrada e saída */
+        }
+
+        /* Animação de fade */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .notification-card.success {
@@ -31,6 +53,7 @@
 
         .notification-card p {
             margin: 0;
+            font-size: 16px;
         }
 
         .notification-card button {
@@ -40,23 +63,81 @@
             cursor: pointer;
             margin-left: 10px;
             color: inherit;
+            font-weight: bold;
         }
+
 
         /* Estilos para o card de confirmação */
         .confirmation-card {
             display: none;
             /* Inicialmente oculto */
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #fff;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            width: 350px;
+            /* Aumenta a largura para melhor legibilidade */
+            height: auto;
+            /* Altura automática para ajustar ao conteúdo */
+            background-color: #ffffff;
+            /* Mantém o fundo branco para contraste */
             color: #333;
             border: 1px solid #ccc;
-            padding: 15px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            /* Aumenta o padding para espaçamento interno */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            /* Suaviza a sombra */
             z-index: 1000;
-            border-radius: 5px;
+            border-radius: 10px;
+            /* Bordas mais suaves */
             text-align: center;
+            font-size: 18px;
+            /* Aumenta o tamanho da fonte */
+        }
+
+        /* Estilo para o texto de confirmação */
+        .confirmation-card p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Estilos para os botões */
+        .confirmation-card button {
+            font-size: 16px;
+            padding: 12px 24px;
+            /* Botões maiores para melhor interação */
+            margin: 5px 10px;
+            /* Espaçamento entre os botões */
+            border: none;
+            border-radius: 5px;
+            /* Bordas arredondadas nos botões */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilos para o botão de confirmação */
+        #confirm-emergency {
+            background-color: #28a745;
+            /* Cor verde para indicar ação positiva */
+            color: #fff;
+        }
+
+        #confirm-emergency:hover {
+            background-color: #218838;
+            /* Cor mais escura ao passar o mouse */
+        }
+
+        /* Estilos para o botão de cancelamento */
+        #cancel-emergency {
+            background-color: #dc3545;
+            /* Cor vermelha para cancelar */
+            color: #fff;
+        }
+
+        #cancel-emergency:hover {
+            background-color: #c82333;
+            /* Cor mais escura ao passar o mouse */
         }
     </style>
 </head>

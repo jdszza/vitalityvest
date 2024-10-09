@@ -46,29 +46,30 @@ if (!isset($_SESSION['user_id'])) {
 
         <div id="dica-hemorragia" class="dica-content">
             <h3>Para comprimir uma hemorragia, use um pano limpo e pressione o local até que o sangramento pare.</h3>
-            <img src="../img/hemorragia.png" alt="Hemorragia Dica" class="personagem-dica">
+            <img src="../img/hemorragia.png" alt="Hemorragia Dica" class="personagem-hemorragia">
         </div>
 
         <div id="dica-manobra" class="dica-content">
             <h3>A Manobra de Heimlich é usada para desobstruir vias aéreas de uma pessoa que está engasgada.</h3>
-            <img src="../img/heimlich.png" alt="Heimlich Dica" class="personagem-dica">
+            <img src="../img/heimlich.png" alt="Heimlich Dica" class="personagem-heim" id="imagem-dica-atual">
         </div>
 
         <div id="dica-rcp" class="dica-content">
             <h3>A RCP consiste em compressões torácicas e ventilação para manter a circulação e respiração da vítima.
             </h3>
-            <img src="../img/rcp.jpg" alt="RCP Dica" class="personagem-dica">
+            <img src="../img/rcp.png" alt="RCP Dica" class="personagem-rcp">
         </div>
 
         <div id="dica-queimaduras" class="dica-content">
             <h3>Para tratar queimaduras, lave a área com água corrente e cubra com um pano limpo.</h3>
-            <img src="../img/queimaduras.png" alt="Queimaduras Dica" class="personagem-dica">
+            <img src="../img/queimaduras.png" alt="Queimaduras Dica" class="personagem-queima">
         </div>
 
         <div id="dica-fraturas" class="dica-content">
             <h3>Para imobilizar uma fratura, use uma tala ou improvise com objetos rígidos, evitando mover a área
                 afetada.</h3>
-            <img src="../img/fraturas.jpg" alt="Fraturas Dica" class="personagem-dica">
+            <img src="../img/fraturas.png" alt="Fraturas Dica" class="personagem-fratura">
+            <img src="../img/fratura-exposta.png" alt="Fraturas Dica" class="personagem-fratura">
         </div>
     </div>
     <!-- Navigation Bar -->
@@ -110,6 +111,30 @@ if (!isset($_SESSION['user_id'])) {
                 document.getElementById('dica-default').classList.add('active');
             }
         }
+
+
+        let imagens = [
+    {
+        src: '../img/heimlich.png'
+    },
+    {
+        src: '../img/heimlich2.png'
+    }
+];
+
+let indiceAtual = 0;
+
+function alternarImagem() {
+    // Mudar para a próxima imagem
+    indiceAtual = (indiceAtual + 1) % imagens.length;
+    
+    // Alterar a imagem e a descrição
+    document.getElementById('imagem-dica-atual').src = imagens[indiceAtual].src;
+}
+
+// Definir um intervalo para trocar a imagem a cada 5 segundos (5000 milissegundos)
+setInterval(alternarImagem, 3000);
+
     </script>
 </body>
 

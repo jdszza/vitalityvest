@@ -153,11 +153,40 @@ input[type="email"], input[type="password"] {
 }
 
 .personagem-dica {
-    margin-top: 20px;
-    width: 200px;
+    width: 230px;
     position: absolute;
     align-self: end;
-    margin-left: 50%;
+    margin-top: 35px;
+    margin-left: 40%;
+}
+
+.personagem-hemorragia{
+    width: 390px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.personagem-heim{
+    width: 390px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.personagem-rcp{
+    width: 390px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.personagem-queima{
+    width: 390px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.personagem-fratura{
+    width: 350px;
+    margin-left: 30px;
 }
 
 .navbar {
@@ -322,3 +351,4 @@ p{
     font-size: 25px;
     font-weight: bold;
 }
+
